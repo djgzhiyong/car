@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="navigation_drawer_width">290dp</dimen>
+    <dimen name="fontNormal">16sp</dimen>
+    <dimen name="fontSmall">12sp</dimen>
+    <dimen name="fontTitle">18sp</dimen>
+    <dimen name="fontBig">20sp</dimen>
+    <dimen name="cardElevationSize">2dp</dimen>
+</resources>

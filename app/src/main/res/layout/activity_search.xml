@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/block_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/search_label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="取车日期: " />
+
+        <EditText
+            android:id="@+id/search_tackCarTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/search_label1"
+            android:background="@color/transparentColor"
+            android:focusable="false"
+            android:gravity="right"
+            android:hint="请选择"
+            android:textSize="@dimen/fontNormal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/block_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/search_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="还车日期: " />
+
+        <EditText
+            android:id="@+id/search_returnCarTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/search_label2"
+            android:background="@color/transparentColor"
+            android:focusable="false"
+            android:gravity="right"
+            android:hint="请选择"
+            android:textSize="@dimen/fontNormal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/block_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/search_label6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="日  租  价: " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/search_label6"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_dayPriceBegin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/block_bg"
+                android:focusable="false"
+                android:gravity="center"
+                android:textSize="@dimen/fontNormal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="至" />
+
+            <EditText
+                android:id="@+id/search_dayPriceEnd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/block_bg"
+                android:focusable="false"
+                android:gravity="center"
+                android:textSize="@dimen/fontNormal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/block_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/search_label3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="车        型: " />
+
+        <EditText
+            android:id="@+id/search_carType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/search_label3"
+            android:background="@color/transparentColor"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_drawer"
+            android:focusable="false"
+            android:gravity="right"
+            android:hint="请选择"
+            android:textSize="@dimen/fontNormal" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/block_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/search_label4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="档        位: " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/search_label4"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="手动"
+                android:textSize="@dimen/fontSmall" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="自动"
+                android:textSize="@dimen/fontSmall" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="手自一体"
+                android:textSize="@dimen/fontSmall" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/block_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/search_label5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="品        牌: " />
+
+
+        <EditText
+            android:id="@+id/search_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/search_label5"
+            android:background="@color/transparentColor"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_drawer"
+            android:focusable="false"
+            android:gravity="right"
+            android:hint="请选择"
+            android:textSize="@dimen/fontNormal" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/block_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/search_labelz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="颜        色: " />
+
+
+        <EditText
+            android:id="@+id/search_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/search_labelz"
+            android:background="@color/transparentColor"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_drawer"
+            android:focusable="false"
+            android:gravity="right"
+            android:hint="请选择"
+            android:textSize="@dimen/fontNormal" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/search_btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/redColor"
+        android:text="搜索"
+        android:textColor="@color/whiteColor" />
+</LinearLayout>

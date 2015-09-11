@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="redColor">#E91E63</color>
+    <color name="redSecondColor">#C2185B</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="blueColor">#0064ff</color>
+    <color name="grayColor">#7e7e7e</color>
+    <color name="transparentColor">#00000000</color>
+    <color name="backgroundColor">#E5E5E5</color>
+
+</resources>
