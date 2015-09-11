@@ -37,8 +37,7 @@ public class SplashActivity extends Activity implements Handler.Callback {
     }
 
     private void havefun() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+       Platform.jumpActivity(this,MainActivity.class);
         finish();
     }
 }
